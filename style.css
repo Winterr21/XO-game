@@ -1,0 +1,46 @@
+*
+{
+    background-image: url(jj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+     body {
+
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            background-color: #f0f0f0;
+            border: 2px solid #000;
+            cursor: pointer;
+            border-radius: 45px;
+        }
+        .cell.taken {
+            pointer-events: none;
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        .reset {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 45px;
+        }
